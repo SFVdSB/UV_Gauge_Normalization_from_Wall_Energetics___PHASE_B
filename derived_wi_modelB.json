@@ -1,0 +1,39 @@
+{
+  "basis_file": "kernel_basis.json",
+  "integrals": {
+    "B0": 5.25294011951335,
+    "BPhi": 2.832830123570485,
+    "Bphi": -6.912419069297308
+  },
+  "model": "B",
+  "params": {
+    "k0": 1.0,
+    "c1Phi": 0.0,
+    "c1phi": 0.0,
+    "c2Phi": 0.0,
+    "c2phi": 0.0,
+    "c3Phi": 0.0,
+    "c3phi": 0.0,
+    "b1": 0.2,
+    "b2": 0.1,
+    "b3": 0.3,
+    "m0": 1.0,
+    "yPhi": 0.1,
+    "yphi": 0.1,
+    "mu": 1.0
+  },
+  "derived_weights": {
+    "w1_over_w2": 1.000196683891452,
+    "w2": 1.0,
+    "w3_over_w2": 1.0003933677829044
+  },
+  "two_loop_rge": {
+    "alpha1_MZ_pred": 0.01938745446317299,
+    "alpha2_MZ_match": 0.03379990190455351,
+    "alpha3_MZ_pred": 11909.805726054059,
+    "Lambda5_two_loop_GeV": {
+      "from_predicted_alpha3": 4.895950416026622,
+      "from_target_alpha3": 0.20985928980158283
+    }
+  }
+}

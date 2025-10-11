@@ -1,0 +1,30 @@
+python kernel_integrals.py ^
+  --profile background_profile.csv ^
+  --shell-mult 3.0 ^
+  --baseline FV ^
+  --output kernel_basis.json
+
+
+python derive_wi_from_kernel.py ^
+  --basis kernel_basis.json ^
+  --model A --k0 1.0 ^
+  --c1Phi 0.12 --c2Phi 0.00 --c3Phi 0.10 ^
+  --c1phi 0.00 --c2phi 0.00 --c3phi 0.00 ^
+  --two-loop-rge --uv 2.41e14 ^
+  --output derived_wi_modelA.json
+
+
+python derive_wi_from_kernel.py ^
+  --basis kernel_basis.json ^
+  --model B --b1 0.2 --b2 0.1 --b3 0.3 ^
+  --m0 1.0 --yPhi 0.1 --yphi 0.1 --mu 1.0 ^
+  --two-loop-rge --uv 2.41e14 ^
+  --output derived_wi_modelB.json
+
+
+python derive_wi_from_kernel_v2.py ^
+  --basis kernel_basis.json ^
+  --model A --k0 1.0 ^
+  --fit-w 0.913 0.926 ^
+  --two-loop-rge --uv 2.41e14 ^
+  --output derived_wi_fitA.json
