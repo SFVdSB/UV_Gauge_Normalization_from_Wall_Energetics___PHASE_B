@@ -1,3 +1,7 @@
+# UPDATE - Phase B
+Run final calculation for Phase B in a single run calculation with predict_qcd_from_w3_patched.py
+Requires phaseA_tau_summary.json and derived_wi_modelA_phi.json (generated from the other Phase B scripts)
+
 # SFV/dSB — Phase A (Route A) Toolkit (v2)
 
 This bundle includes:
